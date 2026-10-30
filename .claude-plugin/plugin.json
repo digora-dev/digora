@@ -1,7 +1,7 @@
 {
   "name": "digora",
   "displayName": "Digora",
-  "description": "Skills for working with AI coding agents: /digora:substantial saves what a session would lose before it ends.",
+  "description": "Skills for working with AI coding agents: /digora:substantial saves what a session would lose before it ends; /digora:agree keeps proposed and agreed work apart in plan files.",
   "author": {
     "name": "Kurdalaegon",
     "email": "kurdalaegon@digora.dev",
@@ -10,5 +10,11 @@
   "homepage": "https://digora.dev",
   "repository": "https://github.com/digora-dev/digora",
   "license": "MIT",
-  "keywords": ["memory", "session", "handoff"]
+  "keywords": [
+    "memory",
+    "session",
+    "handoff",
+    "planning",
+    "agreement"
+  ]
 }

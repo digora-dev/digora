@@ -10,7 +10,7 @@
     {
       "name": "digora",
       "source": "./",
-      "description": "/digora:substantial saves what a session would lose before it ends."
+      "description": "/digora:substantial saves what a session would lose before it ends; /digora:agree keeps proposed and agreed work apart in plan files."
     }
   ]
 }
