@@ -5,7 +5,8 @@ compacted, and saves only what the user picks. The instructions the agent follow
 for people and is not loaded when the skill runs.
 
 Install by symlinking, not copying, so a `git pull` updates it. From the root of your clone of this repo:
-`ln -sfn "$PWD/skills/substantial" ~/.claude/skills/substantial`.
+`ln -sfn "$PWD/skills/substantial" ~/.claude/skills/substantial`. Or install the `digora` plugin, which runs it as
+`/digora:substantial` ([repo README](../../README.md)).
 
 What it caught in 68 runs over two weeks, what it costs, and how it compares with the alternatives:
 [One question I ask my coding agent before closing every session](https://digora.dev/articles/one-question-before-closing/).

@@ -1,0 +1,16 @@
+{
+  "name": "digora",
+  "description": "Digora's skills for Claude Code, from daily use. https://digora.dev",
+  "owner": {
+    "name": "Kurdalaegon",
+    "email": "kurdalaegon@digora.dev",
+    "url": "https://digora.dev"
+  },
+  "plugins": [
+    {
+      "name": "digora",
+      "source": "./",
+      "description": "/digora:substantial saves what a session would lose before it ends."
+    }
+  ]
+}
