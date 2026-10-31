@@ -25,7 +25,8 @@ Sections to copy into a project's `AGENTS.md`, so every agent follows them, whic
 
 | Rules | What they cover |
 |---|---|
-| [`proposals`](rules/proposals.md) | Proposed vs agreed: work given to someone else is a proposal until they agree, agreement names numbered items, a relayed answer stays unconfirmed until the person confirms it, and agents never record or commit agreement for anyone. |
+| [`proposals`](rules/proposals.md) | Proposed vs agreed: work given to someone else is a proposal until they agree, agreement names numbered items, a relayed answer (or an agreement someone else wrote down) stays unconfirmed until the person confirms it, and an agreement is a commit of its own, made only on that person's explicit confirmation. |
+| [`rules-files`](rules/rules-files.md) | Changes to the files agents take instructions from: edits only on an explicit ask, shared `AGENTS.md` changes through a reviewed branch, incoming changes announced before anything else, personal rules in a gitignored `AGENTS.local.md`, and keeping the files short. |
 
 ## License
 
