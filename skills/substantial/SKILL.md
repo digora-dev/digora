@@ -27,12 +27,25 @@ Answer this question about the current session:
 
    Skip anything the repo or git history already records, and anything that only mattered to this
    conversation.
+
+   While checking whether something is already saved, read the note it would go into. A note that this
+   session showed to be wrong is a candidate too: a correction. If a note or a candidate says work was
+   committed, pushed or merged, check the repo first (`git -C <repo> status`, `git -C <repo> log @{u}..`)
+   and go by what git shows, not by what the note says.
 2. If nothing qualifies, say so in one line and stop.
 3. Otherwise, list each candidate as one line and name where it would go:
    - an auto-memory file (project state, references);
    - the project's own README or notes, if it belongs to a project;
    - `AGENTS.md`, for rules (propose these, don't write them).
 
+   A correction shows both versions and what backs the new one, so the user does not have to check it:
+
+   `3. Correct <note>: says "<old text, quoted from the file>" -> now "<new>" (<command or file that showed it>, checked <date>)`
+
+   Mark it `unchecked` when nothing in this session backs the new version. Ask about a repo's state only
+   when git could not settle it.
+
    Then ask which ones to save.
 4. Save only what the user picks. Follow the memory format and update an existing memory rather than
-   adding a duplicate. Never save credentials.
+   adding a duplicate. Never save credentials. Write a state as what was checked, with an identifier and a
+   date ("pushed a1b2c3, checked 2026-10-31"), never a bare "done": the next session can check that.
