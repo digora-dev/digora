@@ -74,7 +74,9 @@ list under anyone's name.
 ## Finish
 
 7. Show the changed lines.
-8. Never commit, sign or push the change yourself, even when asked: agreement is the person's own step. Give the
-   commit command for the user to run, with a trailer per item: `Agreed: T14`, `Relayed: T14 (bob)`,
-   `Proposed: T14 -> bob`, `Declined: T15`.
+8. An agreement is a commit of its own, never bundled with other changes. Commit nothing unless the user asks. When
+   they do, commit the other changes first (proposals, relays, declines, anything else), then say that the
+   agreement needs its own explicit confirmation and show the change and the command. Commit or push it only when
+   the user confirms that commit, and only for the user's own agreement, never anyone else's. One trailer per item:
+   `Agreed: T14`, `Relayed: T14 (bob)`, `Proposed: T14 -> bob`, `Declined: T15`.
 9. Never run a tool that records agreement to a whole file, and never edit its record by hand.
